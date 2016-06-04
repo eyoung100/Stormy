@@ -7,7 +7,8 @@ import android.content.Context;
 import android.os.Bundle;
 
 /**
- * Created by ecyou on 5/11/2016.
+ * Created by ecyoung on 5/11/2016.
+ * Creates custom dialog box
  */
 public class AlertDialogFragment extends DialogFragment {
     @Override
@@ -18,7 +19,8 @@ public class AlertDialogFragment extends DialogFragment {
                 .setMessage(R.string.error_message)
                 .setPositiveButton(R.string.error_ok_button_text, null);
 
-        AlertDialog dialog = builder.create();
+        AlertDialog dialog;
+        dialog = builder.create();
         return dialog;
     }
 }
