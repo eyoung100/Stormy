@@ -127,6 +127,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void toggleRefresh() {
+
+        // Uses switch instead of video's if
         switch (mUpdateInfoProgressBar.getVisibility()) {
             case View.INVISIBLE:
                 mUpdateInfoProgressBar.setVisibility(View.VISIBLE);
