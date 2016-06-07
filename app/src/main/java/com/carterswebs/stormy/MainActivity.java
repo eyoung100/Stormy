@@ -144,8 +144,8 @@ public class MainActivity extends AppCompatActivity {
     private void updateDisplay() {
 
         // Temperature
-        int currentTemperature = mCurrentWeather.getTemperature();
         String temperatureFormat = getResources().getString(R.string.integerOutput);
+        int currentTemperature = mCurrentWeather.getTemperature();
         String temperatureLabel = String.format(temperatureFormat,currentTemperature);
         mTemperatureLabel.setText(temperatureLabel);
 
