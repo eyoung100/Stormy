@@ -150,8 +150,8 @@ public class MainActivity extends AppCompatActivity {
         mTemperatureLabel.setText(temperatureLabel);
 
         // Time
-        String currentTime = mCurrentWeather.getFormattedTime();
         String timeFormat = getString(R.string.timeString);
+        String currentTime = mCurrentWeather.getFormattedTime();
         String timeLabel = String.format(timeFormat,currentTime);
         mTimeLabel.setText(timeLabel);
 
